@@ -1,17 +1,29 @@
-@import url('https://fonts.google.com/specimen/Caveat?selection.family=Caveat');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
 page-menu {
+    .bg{
+        height: 100%;
+        width: 100%;
+        //background: linear-gradient(160deg, #ad00f7 30%, #d272fb 70%);
+      background: linear-gradient(to right, #8000ff 0%, #9040e0 51%, #8000ff 140%);    
+    }
     .title{
-        font-size: 4vh!important;
+        font-size: 3vh!important;
         font-weight: Lighter!important;
-        font-family: 'Caveat', cursive;
-        transform: translate(50%, 50%);
-    } 
+        font-family: 'Kalam', cursive;
+        transform: translate(5%, 5%);
+    }  
+    .t{
+        font-size: 3vh!important;
+        font-family: 'Satisfy', cursive;
+    }
     ion-menu{
         ion-content{
-         background-color:#b30000 !important;
+         background-color:#4d0000 !important;
         }
        }
        .no-scroll .scroll-content{
         overflow: hidden;
-   }
-}
+   } 
+} 

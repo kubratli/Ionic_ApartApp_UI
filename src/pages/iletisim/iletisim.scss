@@ -1,3 +1,41 @@
-page-iletisim {
+@import url('https://fonts.googleapis.com/css?family=Courgette');  
+@import url('https://fonts.googleapis.com/css?family=Barlow'); 
 
+
+page-iletisim {
+    .adres{
+        font-size: 2vh!important;
+        font-weight: Lighter!important;
+        font-family: 'Barlow', cursive;
+    }
+    .iletisim{
+        font-size: 3vh!important;
+        font-weight: Lighter!important;
+        font-family: 'Courgette', cursive;
+    }
+    .b{   
+        background: linear-gradient(to right, #8000ff 0%, #9040e0 51%, #8000ff 140%);    
+
+       // background-color:#ad00f7;
+        width:80px;
+        height:80px; 
+         border-radius: 70px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px; 
+        margin: left;
+        bottom: 90%;
+        //transform: translate(20%, -330%); 
+    }
+    .takip{ 
+        left: 40%;
+        position: relative;
+        font-size: 100%; 
+        font-family: 'Courgette', cursive;
+    } 
+    .icon { 
+        left: 50%;    position: absolute;
+        font-size: 30px; //Preferred size here
+    } 
+    .no-scroll .scroll-content{
+        overflow: hidden;}
 }

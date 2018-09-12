@@ -21,5 +21,10 @@ export class IletisimPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad IletisimPage');
   }
-
+  shareViaEmail(){
+    this.navCtrl.setRoot('MailPage'); 
+  }
+  Hakkimizda(){
+    this.navCtrl.setRoot('HakkimizdaPage'); 
+  }
 }

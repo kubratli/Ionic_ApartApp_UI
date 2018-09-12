@@ -6,13 +6,76 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>iletisim</ion-title>
+  <ion-navbar> 
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="no-scroll">
+
+    <ion-icon class="icon" style="font-size: 120px; color:lightgrey;" name="ios-bonfire"></ion-icon>
+    <br><br><br><br><br><br><br><br><br><br>
+  <div class="takip" >Bizimle iletişime geçebilirsiniz
+  <br> <br>   Yıllardır eğitim, yurt işletmeciliği<br> birikim
+  ve deneyimlerimizle <br>başarılı ve güvenli bir şekilde<br> hizmete devam etmekteyiz.
+  <br><br><br><br><br><br><div class="iletisim">İletişim Bilgileri</div>
+  <br><div class="adres">Anadolu Üniversitesi<br> Yunusemre Kampüsü<br> Anadolu Teknoparkı <br>No:2/57-22 Tepebaşı/ESKİŞEHİR</div>
+  </div>    
+         <button 
+            class="b"
+            ion-button 
+            block
+            padding-vertical
+            color="secondary"
+            (click)="shareViaFacebook()"> 
+            <ion-icon  ios="logo-facebook" md="logo-facebook"></ion-icon>
+         </button>  
+         <button 
+            class="b"
+            ion-button 
+            block
+            padding-vertical
+            color="secondary"
+            (click)="shareViaInstagram()"> 
+               <ion-icon ios="logo-instagram" md="logo-instagram"></ion-icon>
+         </button>  
+         <button 
+            class="b"
+            ion-button 
+            block
+            padding-vertical
+            color="secondary"
+            (click)="shareViaEmail()"> 
+               <ion-icon ios="md-mail" md="md-mail"></ion-icon>
+         </button>  
+         <button 
+            class="b"
+            ion-button 
+            block
+            padding-vertical
+            color="secondary"
+            (click)="shareSMS()"> 
+               <ion-icon class="icon" ios="ios-text" md="ios-text"></ion-icon>
+         </button> 
+         <button 
+            class="b"
+            ion-button 
+            block
+            padding-vertical
+            color="secondary"
+            (click)="Hakkimizda()"> 
+     <ion-icon name="md-information-circle"></ion-icon>
+</button> 
+<button 
+  class="b"
+  ion-button 
+  block
+  padding-vertical
+  color="secondary"
+  > 
+<ion-icon name="md-pin"></ion-icon>
+</button>  
+<br> 
 
 </ion-content>

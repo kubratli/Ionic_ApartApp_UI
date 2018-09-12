@@ -1,0 +1,35 @@
+page-profile {
+    .no-scroll .scroll-content{
+        overflow: hidden;}
+    .profile-image{
+        width: 120px;
+        height: 120px; 
+        border-radius: 50%;    
+        z-index: 10;
+        margin-top: -70px;
+        position: relative;
+        left: 20%;
+        margin-right: -10%;
+        transform: translate(-50%, -80%);
+        box-shadow: -6px 15px 81px 3px rgba(0, 0, 0, 75);  
+    } 
+ 
+      .bg{
+         background-image: url('../assets/imgs/profile.jpg');
+         height:220px;
+         width: 220px; 
+         background-size: cover;
+         filter: blur(5px);
+         border-radius: 50%;  
+         background-position: center center;
+         transform: translate(20%, 5%);  
+    }
+    ion-icon {
+        font-size: 40px;     
+        vertical-align: middle;
+    } 
+    .yazi{
+        font-family: Segoe UI Light;
+        font-size: 30px; 
+    }
+}

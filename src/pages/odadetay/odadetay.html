@@ -1,0 +1,71 @@
+<!--
+  Generated template for the OdadetayPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar> 
+  </ion-navbar>
+  <ion-toolbar >
+    <ion-buttons start>
+      <button ion-button icon-only color="royal" (click)="showWater()">
+        <ion-icon style="font-size:250%" name="water"></ion-icon>
+      </button> 
+      <button ion-button icon-only color="royal" (click)="showWifi()">
+        <ion-icon style="font-size:250%" name="ios-wifi"></ion-icon>
+      </button>
+      <button ion-button icon-only color="royal" (click)="showBus()">
+          <ion-icon style="font-size:250%"  name="md-bus"></ion-icon>
+      </button>
+      <button ion-button icon-only color="royal">
+         <ion-icon style="font-size:250%"  name="ios-school"></ion-icon>
+      </button>
+      <button ion-button icon-only color="royal">
+              <ion-icon style="font-size:250%"  name="ios-desktop"></ion-icon>
+      </button>
+      <button ion-button icon-only color="royal">
+              <ion-icon style="font-size:250%" name="ios-bonfire"></ion-icon>
+      </button> 
+      <button ion-button icon-only color="royal">
+              <ion-icon style="font-size:250%" name="pin"></ion-icon>
+      </button> 
+    </ion-buttons>
+  </ion-toolbar> 
+      
+  
+</ion-header>
+
+
+<ion-content padding class="card-background-page ">
+   <!--  <ion-card>
+    <ion-slides>
+      <ion-slide> 
+          <img  src="assets/imgs/card-saopaolo.jpg">
+          <caption>
+              <div class="card-title ">Odunpazarı</div><br><br> 
+             </caption>  
+      </ion-slide>
+      <ion-slide>
+          <img  src="assets/imgs/card-madison.jpg">
+          <div class="card-title">Tepebaşı</div><br><br> 
+      </ion-slide>
+      <ion-slide>
+          <img src="assets/imgs/card-sf.jpg"/>
+          <div class="card-title">Alpu</div><br><br> 
+      </ion-slide>
+      <ion-slide> 
+      <img src="assets/imgs/card-amsterdam.jpg"/>
+      <div class="card-title">Han</div><br> 
+    </ion-slide>
+    </ion-slides>
+    <ion-slides (ionSlideDidChange)="slideChanged()"></ion-slides> </ion-card>-->
+ 
+      <ion-card  >     
+          <img (click)="presentActionSheet()"  class="img" src="assets/imgs/oda1.jpg">  <br>
+          <img class="img" src="assets/imgs/oda4.png">  <br>  
+          <img class="img" src="assets/imgs/oda5.png">  <br> 
+  
+     </ion-card>  
+</ion-content>

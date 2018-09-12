@@ -1,0 +1,62 @@
+page-odadetay {
+  .myPage {  
+    background-color: #F35E5D !important;
+    background: #F35E5D  !important;
+    color: red !important;
+    $alert-md-background-color: #F35E5D;
+    $alert-ios-background: #F35E5D;
+}
+    ion-icon {  
+        margin-left:  5px; 
+        margin-right:  5px;
+         
+    }
+    .img{
+      
+    box-shadow: 0 0 1px #d1cfad;
+      border-radius: 16%; 
+    }
+   
+        .card-background-page {
+
+            ion-card {
+              position: relative;
+              text-align: center;
+            }
+          
+            .card-title {
+              position: absolute;
+              top: 36%;
+              font-size: 2.0em;
+              width: 100%;
+              font-weight: bold;
+              color: #fff;
+            }
+          
+            .card-subtitle {
+              font-size: 1.0em;
+              position: absolute;
+              top: 52%;
+              width: 100%;
+              color: #fff;
+            }}
+    ::-webkit-scrollbar-track
+    {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+    border-radius: 10px!important;
+    background-color: #F5F5F5!important;
+    }
+    
+    ::-webkit-scrollbar
+    {
+    width: 10px!important;
+    background-color: #F5F5F5!important;
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+    border-radius: 10px!important;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)!important;
+    background-color: #96c4ce!important;
+    }   
+}

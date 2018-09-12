@@ -14,12 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'odalar.html',
 })
 export class OdalarPage {
+  public ionicNamedColor: string = 'primary';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  } 
+  public odaDetay1(): void {
+    if(this.ionicNamedColor === 'primary') { 
+      this.ionicNamedColor = 'secondary';
+      this.navCtrl.setRoot('OdadetayPage'); 
+    } else {
+      this.ionicNamedColor = 'primary'
+    }
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad OdalarPage');
-  }
-
 }

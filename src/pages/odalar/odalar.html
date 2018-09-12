@@ -4,15 +4,62 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header style="height: 20%;">
 
-  <ion-navbar>
-    <ion-title>odalar</ion-title>
+  <ion-navbar> 
   </ion-navbar>
-
+  <ion-slides  class="card-background-page" >
+      <ion-slide> 
+          <img   src="assets/imgs/card-saopaolo.jpg">
+          <caption>
+              <div class="card-title ">Tek Kişilik Odalar</div><br><br> 
+             </caption>  
+      </ion-slide>
+      <ion-slide>
+          <img  src="assets/imgs/card-madison.jpg">
+          <div class="card-title">Çift Kişilik Odalar</div><br><br> 
+      </ion-slide>
+      <ion-slide>
+          <img src="assets/imgs/card-sf.jpg"/>
+          <div class="card-title">Dört Kişilik Odalar</div><br><br> 
+      </ion-slide>
+      <ion-slide> 
+      <img src="assets/imgs/card-amsterdam.jpg"/>
+      <div class="card-title">Apart Odalar</div><br> 
+    </ion-slide>
+    </ion-slides>
+    <ion-slides (ionSlideDidChange)="slideChanged()"></ion-slides>  
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding  class="card-background-page"><br> <br> <br> 
+<div class="oda">Sizler için hazırladığımız odalarımız</div>
+
+
+<br> 
+<ion-card> 
+ <img class="img" (click)="odaDetay1()"   src="assets/imgs/oda1.jpg" >       
+  <div class="card-title">Tek Kişilik Odalar</div> </ion-card>
+<br> 
+  <img class="img2" col col-50  src="assets/imgs/oda1.jpg" >
+  <img class="img2" col col-50 src="assets/imgs/oda3.jpg">  
+  <img class="img2" col col-50 src="assets/imgs/oda2.jpg">  
+
+  <ion-card> <img class="img" col col-50 src="assets/imgs/oda2.jpg"> <br> 
+    <div class="card-title">Çift Kişilik Odalar</div> 
+    <div class="card-subtitle">Apart Odalar</div> 
+
+  </ion-card>
+<img class="img2" col col-50  src="assets/imgs/oda1.jpg" >
+  <img class="img2" col col-50 src="assets/imgs/oda3.jpg">  
+  <img class="img2" col col-50 src="assets/imgs/oda2.jpg">  
+
+  <ion-card><img class="img" col col-50 src="assets/imgs/oda3.jpg"> <br>
+    <div class="card-title">Dört Kişilik Odalar</div>   </ion-card>
+<img class="img2" col col-50  src="assets/imgs/oda1.jpg" >
+  <img class="img2" col col-50 src="assets/imgs/oda3.jpg">  
+  <img class="img2" col col-50 src="assets/imgs/oda2.jpg">  
+ 
+
 
 </ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+      <ion-buttons start>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button> 
+        </ion-buttons>   
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="no-scroll">
+  <ion-list>
+    <ion-item>
+      <ion-input [(ngModel)]="message" placeholder="Mesajınızı giriniz"></ion-input>
+    </ion-item> 
+        <ion-item>
+            <ion-input [(ngModel)]="subject" placeholder="Konu Giriniz"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="sendTo" placeholder="Kime Göndereceksiniz?"></ion-input>
+          </ion-item>
+  </ion-list>
+  <button ion-button full (click)="share()">Paylaş </button><br><br>
+
+  <div #map id="map"></div>
+
+</ion-content>

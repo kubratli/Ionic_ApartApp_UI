@@ -1,3 +1,113 @@
-page-hakkimizda {
+@import url('https://fonts.googleapis.com/css?family=Kalam');
 
+page-hakkimizda {
+    .home{    
+        width: 250px;
+        height:250px;  
+        border-radius: 50%;      
+        //border:3px solid transparent; 
+      border: double 4px transparent;
+      border-radius: 80px;
+      background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff9900,#ad00f7);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+    .slide{
+        //background: linear-gradient(to right, #6c6199 0%, #5d518b 51%, #776ca7 140%)
+      background: linear-gradient(to right, #8000ff9a 0%rgba(144, 64, 224, 0.589)e0 51%, #6c6199 140%);    
+
+    }
+.yazi{
+    margin: auto;
+    text-align: center;
+    padding-right: 5%;
+    font-size: 2vh!important;
+        font-weight: Lighter!important;
+        font-family: 'Kalam', cursive;
+        transform: translate(5%, 5%);
+}
+.icon{
+left: 40%;    position: absolute;
+font-size: 130px; //Preferred size here
+} 
+
+.cap{
+    width: 100px;
+    height:100px;  
+    border-radius: 50%;      
+    left: 20%;
+    margin-right: -10%;  
+    transform: translate(-105%, 45%);
+    //border:3px solid transparent; 
+  border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff9900,#ad00f7);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+   // border: 3px linear-gradient(to right, #04020e 0%, #0e0a20 51%, #0e0a20 140%);
+}
+.fridge{
+    width: 100px;
+    height:100px;  
+    border-radius: 50%;      
+    left: 20%;
+    margin-right: -10%;  
+    transform: translate(-152%, -145%);
+    //border: 3px solid #4d0000!important; 
+    border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff9900,#ad00f7);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+} 
+.eskisehirevim{ 
+    text-align: center; 
+    margin: auto;
+    font-size: 3vh!important;
+    font-weight: Lighter!important;
+    font-family: 'Courgette', cursive;
+}
+.img{ 
+width:  80px;
+height: 80px; 
+border-radius: 50%;      
+left: 20%;
+margin-right: -10%;  
+transform: translate(140%, -70%);
+//border: 3px solid #4d0000!important;
+border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff9900,#ad00f7);
+  background-origin: border-box;
+  background-clip: content-box, border-box;  
+} 
+.car{
+width:  100px;
+height: 100px;  
+border-radius: 50%;      
+left: 20%;
+margin-right: -10%;  
+transform: translate(125%, -155%);
+//border: 3px solid #4d0000!important;  
+border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff9900,#ad00f7);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+ 
+.tv{
+width:  100px;
+height: 100px;  
+border-radius: 50%;      
+left: 20%;
+margin-right: -10%;  
+transform: translate(-60%, -5%);
+//border: 3px solid #4d0000!important; 
+border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff9900,#ad00f7);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+} 
 }

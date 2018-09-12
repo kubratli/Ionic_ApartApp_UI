@@ -1,0 +1,56 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header> 
+  <ion-navbar>   
+  </ion-navbar> 
+</ion-header>
+
+
+<ion-content class="no-scroll">  
+      <p class="font"><br>&nbsp;  Kullanıcı Ayarları </p>  
+      <ion-card>
+      <ion-list>
+          <ion-item>
+            <ion-label>Diller</ion-label>
+            <ion-select [(ngModel)]="Language" multiple="true" cancelText="Cancel" okText="Okay!">
+              <ion-option value="English" selected="true">İngilizce</ion-option>
+              <ion-option value="Germany">Almanca</ion-option>
+              <ion-option value="Italian" selected="true">İtalyanca</ion-option> 
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+            <ion-item>
+              <ion-label>Para Birimi
+              </ion-label>
+              <ion-select [(ngModel)]="Currency" multiple="true" cancelText="Cancel" okText="Okay!">
+                <ion-option value="Dolar" selected="true">U.S Dolar (US$)</ion-option> 
+              </ion-select>
+            </ion-item>
+          </ion-list>
+
+        
+            <ion-list>
+            <ion-item >
+                <ion-label>Bildirim?</ion-label>
+                <ion-toggle ></ion-toggle>
+              </ion-item> 
+            </ion-list> </ion-card>
+
+            <p class="font"><br>&nbsp;  Uygulama Ayarları </p>
+            <ion-card>  
+                    <ion-item>
+                      <ion-label  >Özel Verileri Temizle</ion-label> 
+                    </ion-item>   
+                        <ion-item>
+                            <ion-label  >Gizlilik Politikası
+                            </ion-label> 
+                          </ion-item>   
+                          <button ion-button full style="background-color: #9040e0" (click)="doLogout()"><b>Çıkış</b></button>
+            </ion-card>
+</ion-content>

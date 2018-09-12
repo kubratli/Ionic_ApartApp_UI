@@ -19,8 +19,12 @@ export class TabsPage {
   tab3Root='HizmetlerPage';  
   tab4Root='HakkimizdaPage';  
   tab5Root='IletisimPage';  
+  tab6Root='KayitformPage';  
+
   myIndex:number;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.myIndex=navParams.data.tabIndex || 0 ;
+
   }
 
 

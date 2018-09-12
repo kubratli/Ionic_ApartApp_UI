@@ -1,21 +1,28 @@
-<ion-menu [content]="content" side="right">
+<ion-menu [content]="content" side="right" >
 
   <ion-header>
     <ion-navbar>
               <ion-buttons start>
-                          <button ion-button menuToggle>
+                          <button ion-button menuToggle  (click)="animation.start({type:'fadeInLeft', duration:'1000'})">
                             <ion-icon name="menu"></ion-icon>
                           </button> 
                         </ion-buttons>  
     </ion-navbar>
   </ion-header>
 
-<ion-content padding class="no-scroll">
+<ion-content padding class="no-scroll bg">
+  <div animates  text-center><br><br>
+      <ion-icon style="font-size: 80px; color:lightgrey;" name="ios-bonfire"></ion-icon>
+      
+      <br><br><br><br> 
     <ion-label class="title" (click)="AnasayfaPage()" style="color: aliceblue">Anasayfa</ion-label>
     <ion-label class="title" (click)="OdalarPage()" style="color: aliceblue">Odalarımız</ion-label>
     <ion-label class="title" (click)="HizmetlerPage()" style="color: aliceblue">Hizmetlerimiz</ion-label>
     <ion-label class="title" (click)="HakkimizdaPage()" style="color: aliceblue">Hakkımızda</ion-label>
     <ion-label class="title" (click)="IletisimPage()" style="color: aliceblue">İletişim</ion-label>
+    <br><br><br> 
+    <p class="t" style="color: aliceblue">Sizlere Güvenli ve Huzurlu Bir Ortam Sunuyoruz.</p>
+  </div>
 </ion-content>
 </ion-menu>
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

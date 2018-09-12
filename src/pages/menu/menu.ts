@@ -26,13 +26,14 @@ export class MenuPage {
   pages: PageInterface[]=[
    { title: 'Anasayfa', pageName: 'TabsPage', tabComponent: 'AnasayfaPage', index:0, icon: 'home'},
    { title: 'Odalar', pageName: 'TabsPage', tabComponent: 'OdalarPage', index:1, icon: 'md-arrow-dropdown-circle'},
-   { title: 'Hizmetler', pageName: 'TabsPage', tabComponent: 'HizmetlerPage', index:2, icon: 'md-star'},
-   { title: 'Hakkımızda', pageName: 'TabsPage', tabComponent: 'HakkimizdaPage', index:2, icon: 'md-information-circle'},
-   { title: 'İletişim', pageName: 'TabsPage', tabComponent: 'IletisimPage', index:2, icon: 'md-contact'} 
+   { title: 'Hizmetler', pageName: 'TabsPage', tabComponent: 'HizmetlerPage', index:3, icon: 'md-star'},
+   { title: 'Hakkımızda', pageName: 'TabsPage', tabComponent: 'HakkimizdaPage', index:4, icon: 'md-information-circle'},
+   { title: 'İletişim', pageName: 'TabsPage', tabComponent: 'IletisimPage', index:5, icon: 'md-contact'},
+   { title: 'Ön Kayıt', pageName: 'TabsPage', tabComponent: 'KayitformPage', index:5, icon: 'ios-create'}
 ]
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+ 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
   }

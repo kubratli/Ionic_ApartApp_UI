@@ -1,0 +1,77 @@
+<!--
+  Generated template for the OdaozelliklerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar> 
+  </ion-navbar>
+  <ion-toolbar > 
+      <button start
+      class="b"
+      ion-button   
+      color="secondary"
+      (click)="animateElem()"> 
+      <ion-icon  ios="ios-water" md="ios-water"></ion-icon>
+    </button>  
+    <button 
+  class="b"
+  ion-button 
+  block
+  padding-vertical
+  color="secondary"
+  (click)="animateWifi()"> 
+     <ion-icon ios="ios-wifi" md="ios-wifi"></ion-icon>
+</button>  
+<button 
+  class="b"
+  ion-button 
+  block
+  padding-vertical
+  color="secondary"
+  (click)="animateMesafe()"> 
+     <ion-icon ios="md-bus" md="md-bus"></ion-icon>
+</button>  
+<button 
+  class="b"
+  ion-button 
+  block
+  padding-vertical
+  color="secondary"
+  (click)="animateIsitma()"> 
+     <ion-icon class="icon" ios="md-sunny" md="md-sunny"></ion-icon>
+</button>  
+<button 
+  class="b" 
+  ion-button 
+  block
+  padding-vertical
+  color="secondary"
+  (click)="animateElem()"> 
+     <ion-icon class="icon" ios="md-pin" md="md-pin"></ion-icon>
+</button>  
+  </ion-toolbar> 
+</ion-header>
+
+
+<ion-content padding>
+  
+<ion-card #myElement [hidden]="!flag">
+  <ion-card-header style="color: white">Apart Odaları</ion-card-header>
+  <ion-card-content>Her Apartta banyo ve tuvalet</ion-card-content>
+</ion-card>
+<ion-card #wifi [hidden]="!flag">
+    <ion-card-header style="color: white">Apart Odaları</ion-card-header>
+    <ion-card-content>Yüksek hızda wireless internet</ion-card-content>
+  </ion-card>
+  <ion-card #mesafe [hidden]="!flag">
+      <ion-card-header style="color: white">Apart Odaları</ion-card-header>
+      <ion-card-content>Şehir Merkezine 5 Dk Fakülteye 2 Dk Mesafede</ion-card-content>
+    </ion-card>
+    <ion-card #isitma [hidden]="!flag">
+        <ion-card-header style="color: white">Apart Odaları</ion-card-header>
+        <ion-card-content>Tüm Apartlar Merkezi Isıtmalı</ion-card-content>
+      </ion-card>
+</ion-content>

@@ -4,11 +4,13 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
+
 <ion-header>
 
   <ion-navbar>
     <ion-buttons start>
-      <button ion-button menuToggle>
+      <button ion-button menuToggle>  
         <ion-icon name="menu"></ion-icon>
       </button> 
     </ion-buttons> 
@@ -17,6 +19,64 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="card-background-page"> 
+   
+   
+  <ion-card>   
+      <img  #sao (click)="Image(sao)"  src="assets/imgs/card-saopaolo.jpg">   
+      <div class="card-title">Kahvaltı Salonu</div> 
+ </ion-card>   
 
+  <ion-card>
+      
+      <ion-fab right top>
+          <button style="background: linear-gradient(to right, #8000ff 0%, #9040e0 51%, #8000ff 140%);"    
+          ion-fab (click)="addMarker()"> 
+            <ion-icon name="pin"></ion-icon>
+          </button>
+        </ion-fab> 
+    <img  #Amsterdam (click)="Image2(Amsterdam)" src="assets/imgs/card-amsterdam.jpg"/>
+    <div class="card-title">Etkinlik Salonu</div> 
+  </ion-card>
+
+  <ion-card>
+    <img  #myImage (click)="presentImage(myImage)" src="assets/imgs/card-madison.jpg"/>
+    <div class="card-title">Kafeterya</div> 
+  </ion-card>
+
+  <ion-card>
+    <img  #Madison (click)="Image3(Madison)" src="assets/imgs/card-sf.jpg"/>
+    <div class="card-title">Mutfak</div>
+  </ion-card>
+  <ion-fab right top>
+      <button ion-fab style="background: linear-gradient(to right, #8000ff 0%, #9040e0 51%, #8000ff 140%);"    ><ion-icon name="add"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+        <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+        <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+        <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+    <br><br>
+    <ion-card>
+    <div class="yorum"  style="font-size: 140%">Kübra Atlı</div> 
+      
+      <ion-card-content> 
+        <p style="color: white  ">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card > 
+      <button class="button" (click)="animateHaber()" style="text-align: center; color:white">Es Evim Haberler</button>
+     <div class="haber"  #myElement [hidden]="!flag" style=" color:whitesmoke">  <img  src="assets/imgs/card-sf.jpg"/><br> Eskişehirde Hendek’te Bayan Öğrenci , Bayan Öğretmen ve Çalışan bayanlara yönelik apartlar<br><br>
+      <div style="text-align: left; padding-left: 3%; padding-bottom: 3%;"><ion-icon name="md-calendar"></ion-icon>&nbsp; 03/09/2018 </div> </div>
+   
+    </ion-card>
+    <ion-card > 
+        <button class="button" (click)="animateUlasim()" style="text-align: center; color:white">Ulaşım Bilgileri</button>
+        <div class="haber"  #ulasim [hidden]="!flag" style=" color:whitesmoke">  <img  src="assets/imgs/card-sf.jpg"/><br>Şehir Merkezine 5 Dk Fakülteye 2 Dk Mesafede<br><br>
+           </div>
+    </ion-card>
 </ion-content>
